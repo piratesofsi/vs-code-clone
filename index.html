@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vs-code-clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  
+
     <style>
           .extension-card {
            display: flex;
@@ -56,7 +63,7 @@
 
     </style>
   </head>
-  <body class="font-sans">
+  <body class="font-sans  antialiased text-[#9FB3D1] bg-[#0E1117]">
     <!-- nav bar  -->
      <nav class="w-full bg-[#0E1117] sticky top-0 z-50   
          border-b border-white/10">
@@ -127,7 +134,7 @@
 
      <!-- hero section  -->
       <section class=" relative
-         bg-[url('/images/hero-bg.jpg')]
+         bg-[url('/images/hero-bg2.jpg')]
          bg-cover bg-center bg-no-repeat max-h-[700px]">
                  
 
@@ -391,7 +398,7 @@ transition-all duration-200
           <!-- heading  -->
            <h3 class="text-blue-200 text-3xl font-semibold">Agent mode</h3>
            <!-- para  -->
-            <p class="text-blue-200 leading-6">  Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs terminal commands, and responds to compile or test failures — all in a loop until the job is done. Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context Protocol (MCP) servers. </p>
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]">  Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs terminal commands, and responds to compile or test failures — all in a loop until the job is done. Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context Protocol (MCP) servers. </p>
             <a href="#" class="text-blue-400 underline">Build with agent mode</a>
          </div>
          
@@ -414,7 +421,7 @@ transition-all duration-200
           <!-- heading  -->
            <h3 class="text-blue-200 text-3xl font-semibold">Next edit suggestions</h3>
            <!-- para  -->
-            <p class="text-blue-200 leading-6"> VS Code predicts your next move as you code. Use the Tab key to accept AI-powered suggestions right in your editor. It intelligently recommends what to change — and where — based on the edits you're already making. </p>
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> VS Code predicts your next move as you code. Use the Tab key to accept AI-powered suggestions right in your editor. It intelligently recommends what to change — and where — based on the edits you're already making. </p>
             <a href="#" class="text-blue-400 underline">Code with AI-powered suggestions</a>
          </div>
          
@@ -437,7 +444,7 @@ transition-all duration-200
           <!-- heading  -->
            <h3 class="text-blue-200 text-3xl font-semibold">Code with extensions</h3>
            <!-- para  -->
-            <p class="text-blue-200 leading-6"> Customize VS Code with AI-powered <br> functionality from extensions and Model Context Protocol servers to use in Chat. Or,<a href="#" class="underline text-blue-400"> build your  <br> own extension</a> to power your team's unique scenarios. </p>
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> Customize VS Code with AI-powered <br> functionality from extensions and Model  Context Protocol servers to use in Chat. Or,<a href="#" class="underline text-blue-400"> build your  own extension</a> to power your team's unique scenarios. </p>
             
          </div>
          
@@ -539,7 +546,7 @@ transition-all duration-200
   <!-- BLUR (HERE) -->
   <div class="pointer-events-none absolute inset-0">
   <div class="absolute bottom-8 left-1/2 -translate-x-1/2
-              h-20 w-full max-w-[1300px]
+              h-40 w-full max-w-[1300px]
               bg-gradient-to-t from-[#0E1117]/100 to-transparent">
   </div>
 </div>
@@ -564,6 +571,190 @@ transition-all duration-200
         </div>
        
       </section>
+
+         <!-- Feature section: Extensions  2-->
+        
+
+         <section class="bg-[#0E1117] pt-20 pb-28  "> 
+          <!-- content box  -->
+         <div class="max-w-[1240px] w-full mx-auto flex flex-row justify-between items-center">
+          <!-- left part  -->
+          <div class="max-w-[30%] space-y-3 ">
+            <h2 class="text-blue-200 text-3xl font-semibold">
+              Code in any language
+            </h2>
+
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]">
+              VS Code supports almost every major programming language. Several ship in the box, like JavaScript, TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+            </p>
+          </div>
+
+          <!-- right part  -->
+           <!-- grid -->
+           <div class=" grid grid-cols-3 gap-x-36 pr-20 gap-y-1.5 pt-8">
+
+            <!-- card 1  -->
+             <div class="flex flex-row  gap-3.5 justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-js.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> JavaScript</h3>
+             </div>
+
+             <!-- card 2  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-ts.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> TypeScript</h3>
+             </div>
+             <!-- card 3  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-python.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> Python</h3>
+             </div>
+              
+             <!-- card 4  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-cs.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> C#</h3>
+             </div>
+             <!-- card 5  -->
+               <div class="flex flex-row  gap-3.5 justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-cpp.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> C++</h3>
+             </div>
+             <!-- card 6  -->
+               <div class="flex flex-row  gap-3.5 justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-html.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> HTML</h3>
+             </div>
+             <!-- card 7  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-java.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> Java</h3>
+             </div>
+             <!-- card 8  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-json.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> JSON</h3>
+             </div>
+             <!-- card 9  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-php.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> PHP</h3>
+             </div>
+             <!-- card 10  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-markdown.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> Markdown</h3>
+             </div>
+             <!-- card 11  -->
+               <div class="flex flex-row gap-3.5  justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-powershell.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 ">Powershell</h3>
+             </div>
+             <!-- card 12  -->
+               <div class="flex flex-row  gap-3.5 justify-start items-center">
+              <!-- img or icon  -->
+               <img src="images/language-yaml.png" alt="" width="40px" height="40px">
+               <!-- heading or name  -->
+                <h3 class=" font-medium font-mono text-[#C7DBFF]/70 "> YAML</h3>
+             </div>
+
+           </div>
+
+         </div>
+         </section>
+
+
+         <!-- feature section : fully customizable -->
+
+           <section class="relative  bg-[#0E1117] -mt-2 pb-24">
+        <!-- content box  -->
+        <div class="max-w-[1240px] w-full mx-auto flex flex-row gap-14 justify-between items-center">
+             <!-- left part  -->
+         <div class="max-w-[390px] space-y-6 pb-6">
+          <!-- heading  -->
+           <h3 class="text-blue-200 text-3xl font-semibold">Fully customizable</h3>
+           <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> Customize your VS Code UI and layout so that it fits your coding style. </p>
+
+              <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> <a href="#" class="text-blue-400 underline">Color themes</a> let you modify the colors in VS Code's user interface to suit your preferences and work environment. </p>
+
+              <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> <a href="#" class="text-blue-400 underline">Settings Sync </a> enables you to share your user settings across your VS Code instances with the Settings Sync feature. </p>
+
+
+              <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> <a href="#" class="text-blue-400 underline">Profiles</a>  let you create sets of customizations and quickly switch between them or share them with others. </p>
+
+
+
+         </div>
+         
+         <!-- right part  -->
+          <div>
+            <img src="images/swimlane-customized.png" alt="" width="950px" height="950px">
+          </div>
+        </div>
+       
+      </section>
+
+
+       <!-- feature section : code anywhere -->
+
+           <section class="relative  bg-[#0E1117] -mt-2 pb-24">
+        <!-- content box  -->
+        <div class="max-w-[1240px] w-full mx-auto flex flex-row gap-12 justify-between items-center">
+             <!-- left part  -->
+         <div class="max-w-[390px] space-y-5 pb-14">
+          <!-- heading  -->
+           <h3 class="text-blue-200 text-3xl font-semibold">Code anywhere</h3>
+           <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.8]  font-medium text-[16px]"> Code wherever you're most productive, whether you're connected to the cloud, a remote <br> repository, or in the browser with VS Code for <br> the Web (vscode.dev). </p>
+
+              <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> <a href="#" class="text-blue-400 underline">Built-in Source Control </a> empowers you with Git support out-of-the-box. Many other source <br> control providers are available through  <br>extensions. </p>
+
+              <!-- para  -->
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]"> <a href="#" class="text-blue-400 underline">GitHub Codespaces </a> provides cloud-powered development environments for any activity - whether it's a long-term project, or a short-term task like reviewing a pull request. </p>
+
+
+          
+
+
+
+         </div>
+         
+         <!-- right part  -->
+          <div>
+            <img src="images/swimlane-anywhere.png" alt="" width="950px" height="950px" >
+          </div>
+        </div>
+       
+      </section>
+
+
 
 
 
