@@ -96,14 +96,17 @@
         <!-- logo and heading + navlinks in same div  -->
          <div class="flex  items-center gap-7">
         <div class="flex flex-row gap-3 " >
+         
+          <a href="#"> <img src="images/vscode.svg" alt="" width="24px" height="24px"></a>
+          <a href="#" class="sm:block hidden lg:block  ">   <h2 class="text-gray-300 text-[20px] font-semibold  "> Visual Studio Code</h2>
+          </a>
+       
       
-        <img src="images/vscode.svg" alt="" width="24px" height="24px">
-        <h2 class="text-gray-300 text-[20px] font-semibold "> Visual Studio Code</h2>
         </div>
 
       <!-- hyper link list  -->
         
-        <ul class="flex flex-row gap-6 text-gray-400">
+        <ul class="hidden lg:flex flex-row gap-6 text-gray-400">
           <li> <a href="#" class="font-semibold  transition-all duration-200 hover:text-gray-300 ">Docs</a> </li>
           <li><a href="#" class="font-semibold transition-all duration-200 hover:text-gray-300 ">Updates</a></li>
           <li> <a href="#" class="font-semibold transition-all duration-200 hover:text-gray-300 ">Blog</a></li>
@@ -116,11 +119,11 @@
       </div>
          
 
-        <div class="flex flex-row justify-center items-center gap-3 relative"> <!-- search docs  -->
+        <div class="hidden lg:flex flex-row justify-center items-center gap-3 relative"> <!-- search docs  -->
        <form >
             <svg
     class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5
-           text-gray-400 -scale-x-100"
+           text-gray-400 -scale-x-100
     viewBox="0 0 512 512"
     fill="none"
     stroke="currentColor"
@@ -139,6 +142,16 @@
 
         <button class="bg-[#0078D4] font-semibold px-4 py-[4px] rounded transition-all duration-200 text-white mr-6 cursor-pointer  hover:bg-blue-900"> Download</button>
       </div>
+
+
+              <!-- mobile menu button -->
+<button class="lg:hidden text-gray-300 mr-4">
+  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+    <line x1="3" y1="6" x2="21" y2="6"/>
+    <line x1="3" y1="12" x2="21" y2="12"/>
+    <line x1="3" y1="18" x2="21" y2="18"/>
+  </svg>
+</button>
      
       
 
@@ -149,6 +162,7 @@
 
        </div>
       
+
 
       
      </nav>
@@ -166,7 +180,11 @@
        <div class="relative z-10 max-w-[1340px] mx-auto text-center pt-8   shadow-[0_10px_30px_rgba(0,0,0,0.4)]
  ">
         <!-- big text  -->
-         <h1 class=" text-white text-7xl leading-tight font-bold">
+         <h1 class=" text-white text-3xl
+  sm:text-4xl
+  md:text-5xl
+  lg:text-6xl
+  xl:text-7xl  leading-tight font-bold">
           The open source <br> AI code editor
          </h1>
          <!-- box  -->
@@ -222,7 +240,11 @@ transition-all duration-200
        </div>
 
        <!-- image part  -->
-        <img src="images/hero2.png" alt="" class="mx-auto relative max-w-[1240px] z-40 w-full rounded-xl">
+        <img src="images/hero2.png" alt="" class="mx-auto relative   max-w-[320px]
+    sm:max-w-[480px]
+    md:max-w-[720px]
+    lg:max-w-[960px]
+    xl:max-w-[1240px] z-40 w-full rounded-xl">
      
      </section>
 
@@ -237,7 +259,7 @@ transition-all duration-200
           <!-- two divs up and down 
             -->
           <!-- top cards  -->
-          <div class="grid grid-cols-3 gap-12">
+          <div class="grid lg:grid-cols-3 gap-12 md:grid-cols-2 sm:grid-cols-1">
             <!-- card 1 -->
              <div class="w-[380px] border rounded-xl border-gray-700 py-7 px-5 pt-4 pl3 bg-[#161B22]">
               <!-- heading -->
@@ -414,13 +436,13 @@ transition-all duration-200
 
       <section class="relative  bg-[#0E1117] -mt-2 pb-24">
         <!-- content box  -->
-        <div class="max-w-[1240px] w-full mx-auto flex flex-row justify-between items-center">
+        <div class="max-w-[1240px] w-full mx-auto flex lg:flex-row  justify-between items-center sm:flex-col ">
              <!-- left part  -->
          <div class="max-w-[30%] space-y-4 ">
           <!-- heading  -->
            <h3 class="text-blue-200 text-3xl font-semibold">Agent mode</h3>
            <!-- para  -->
-            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]">  Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs terminal commands, and responds to compile or test failures — all in a loop until the job is done. Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context Protocol (MCP) servers. </p>
+            <p class="text-[#C7DBFF]/70 leading-[1.6]  font-medium text-[16px]   ">  Tackle complex, multi-step tasks. Agent mode reads your codebase, suggests edits across files, runs terminal commands, and responds to compile or test failures — all in a loop until the job is done. Further refine agent mode to fit your team's workflows with VS Code extensions and Model Context Protocol (MCP) servers. </p>
             <a href="#" class="text-blue-400 underline">Build with agent mode</a>
          </div>
          
@@ -796,7 +818,7 @@ transition-all duration-200
 
          <!-- middle div for cards  -->
           <!-- take this grid  -->
-          <div class="grid grid-cols-4 pt-14 gap-4 pb-28">
+          <div class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-4  pt-14 gap-4 pb-28">
           <!-- card 1  -->
            <a class=" w-[300px] h-[200px]  inline-flex  flex-col items-start gap-6  p-6 rounded-xl bg-[#161A20] border-rgba(255,255,255,0.18) border border-[rgba(255,255,255,0.14)]  hover:border-[rgba(255,255,255,0.23)] transition-all duration-200" href="#" >
             <div class="p-2.5  rounded-sm bg-[#282f39] inline-flex justify-center items-center">
